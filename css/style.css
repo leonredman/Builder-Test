@@ -1,0 +1,225 @@
+
+
+
+  *{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+		font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .main_wrapper {
+    width: 82%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url('../images/geometry.png');
+  }
+
+  .header_wrapper{
+    display: flex;
+    width:68%;
+    flex-direction: row;
+    height: 120px;
+    background-color: #999999;
+    margin: auto;
+    border-top: 20px;
+  }
+
+  .logo {
+    background: url('../images/batman.png') no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    width: 250px;
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 7%;
+    padding-left: 6.5%;
+    color: white;
+  }
+
+  .social {
+    margin-left: 55%;
+  }
+
+  .social img{
+    border-radius: 100%;
+    margin-top: 30%;
+    width: 23%;
+  }
+
+  nav {
+    display: flex;
+    width: 68%;
+    height: 60px;
+    background-color: black;
+    margin: auto;
+  }
+
+   nav ul li a:hover {
+     background-color: white;
+    height: 60px;
+    color: black;
+    -webkit-box-shadow: inset -5px 5px 20px 11px rgba(15,14,15,0.7);
+    -moz-box-shadow: inset -5px 5px 20px 11px rgba(15,14,15,0.7);
+    box-shadow: inset -5px 5px 20px 11px rgba(15,14,15,0.7);
+  }
+
+  nav ul li {
+    display:inline-flex;
+    justify-content: space-around;
+     /* width: 258px; */
+     width: 24.6%;
+    height: 60px;
+  }
+
+   nav a{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    width: 258px;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .content_wrapper {
+    display: block;
+    width: 68%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+    background-color: #cccccc;
+    margin: auto;
+  }
+
+  .content_wrapper h1 {
+    position: relative;
+    left: 1%;
+    margin-top: 0;
+    font-family: 'Itim', cursive;
+  }
+
+  .content_wrapper h1::before {
+    content: "";
+    background-image: url('../images/batman128.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    height: 70px;
+    width: 100px;
+    display: inline-block;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+    transform: rotate(-30deg);
+  }
+
+  .call1 {
+    float: right;
+    position: relative;
+    top:-30px;
+    margin-left: 10px;
+    background-color: #999999;
+    width: 300px;
+    text-align: left;
+    padding-left: 2%;
+    border-radius: 10px;
+  }
+
+  .call1::after {
+    content: "";
+    padding-left: 50px;
+  }
+
+  .call1 ul {
+    padding-left: 10%;
+  }
+
+  .call1 ul li:nth-child(odd) {
+    list-style-image: url('../images/batman16.png');
+  }
+
+  .call1 ul li:nth-child(even) {
+    list-style-image: url('../images/batman16E.png');
+    color: white;
+  }
+
+  .call1 h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.75em;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .button1 {
+    width: 90%;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 2% 2% 3% 2%;
+    cursor: pointer;
+    border-radius: 40px;
+    font-style: sans-serif;
+  }
+
+  .content_wrapper h2::before {
+    content: "";
+    background-image: url('../images/batman128.png');
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    background-position: 5px 15px;
+    height: 65px;
+    width: 80px;
+    display: inline-block;
+    transform: rotate(-30deg);
+  }
+
+  .content_wrapper h2 {
+    position: relative;
+    margin-top: -20px;
+    font-family: 'Itim', cursive;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+    margin: auto;
+    background-color: #333333;
+    color: white;
+    padding: 1% 5% 1% 5%;
+  }
+
+  .footer_wrapper ul  {
+    list-style-image: url('../images/batman16E.png');
+    margin: 5%;
+    padding-right: 150px;
+  }
+
+
+  @media only screen and (max-width: 1360px) {
+
+      .social {
+        margin-left: 35%;
+      }
+
+      nav ul li {
+        width: 23.6%;
+      }
+
+    }
+  }
+
+
+  
